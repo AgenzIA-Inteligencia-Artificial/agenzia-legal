@@ -21,7 +21,7 @@
   a { color: #2563eb; text-decoration: none; }
   a:hover { text-decoration: underline; }
   h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 2rem; font-weight: 700; }
-  h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; font-weight: 600; scroll-margin-top: 1rem; }
+  h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; font-weight: 600; }
   h3 { font-size: 1.2rem; margin: 2rem 0 .75rem; font-weight: 600; }
   p { margin: 0 0 1rem; }
   ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
@@ -39,7 +39,7 @@
 <a class="back" href="https://agenzia.website">&larr; Volver al inicio</a>
 <article>
 <h1>Textos legales de AgenzIA</h1>
-<p class="version"><strong>Versión 2026-11-10</strong> · vigente desde el 10/11/2026. Hasta esa fecha se aplica la versión del 04/11/2026, que solo se diferencia de esta en la prospección comercial: una fila nueva en la tabla del apartado 5.2 y el párrafo que la sigue.</p>
+<p class="version"><strong>Versión 2026-11-19</strong> · vigente desde el 19/11/2026. Hasta esa fecha se aplica la versión del 10/11/2026, que solo se diferencia de esta en lo relativo al asistente del área de clientes: la tabla del apartado 5.2 y los apartados 5.3 y 5.7.</p>
 
 <h2 id="aviso-legal">1. Aviso Legal</h2>
 <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que el titular de este sitio web es:</p>
@@ -198,6 +198,13 @@
 <td>Duración del contrato + plazos legales (fiscales: hasta 6 años, art. 30 CCom)</td>
 </tr>
 <tr>
+<td>Asistente del área de clientes («Pregúntanos»)</td>
+<td>Las preguntas que escribe el usuario y los datos de la cuenta de su empresa necesarios para responder (proyectos y fases, lo que se le pide, facturas, servicios contratados y su precio, y en qué punto está lo que ha pedido al equipo)</td>
+<td>Responder de forma automática a las dudas del usuario sobre la cuenta de su empresa y prepararle, si lo pide, un borrador de mensaje para el equipo</td>
+<td>Interés legítimo (6.1.f) en ofrecer a los usuarios de las empresas clientes un canal de consulta rápido y opcional</td>
+<td>AgenzIA no guarda el texto de las conversaciones; solo un contador de mensajes por empresa y día, durante 12 meses. El proveedor de IA puede conservar lo recibido hasta 30 días (apartado 5.7)</td>
+</tr>
+<tr>
 <td>Comunicaciones comerciales a clientes</td>
 <td>Datos de contacto profesional</td>
 <td>Informar de servicios propios similares a los contratados</td>
@@ -232,7 +239,7 @@
 <p>No tomamos decisiones automatizadas con efectos jurídicos sobre los interesados ni elaboramos perfiles con tal alcance.</p>
 
 <h3>5.3. Destinatarios</h3>
-<p>No cedemos datos a terceros salvo obligación legal. Acceden a los datos, como encargados de tratamiento de AgenzIA, nuestros proveedores tecnológicos (alojamiento web e infraestructura, herramientas de comunicación y gestión, plataformas de facturación), con los que se han suscrito los contratos del art. 28 RGPD.</p>
+<p>No cedemos datos a terceros salvo obligación legal. Acceden a los datos, como encargados de tratamiento de AgenzIA, nuestros proveedores tecnológicos (alojamiento web e infraestructura, herramientas de comunicación y gestión, plataformas de facturación), con los que se han suscrito los contratos del art. 28 RGPD. Para el asistente del área de clientes, el proveedor de modelos de IA OpenAI trata las preguntas y los datos necesarios para responder como encargado del tratamiento de AgenzIA (apartado 5.7).</p>
 
 <h3>5.4. Transferencias internacionales</h3>
 <p>Algunos proveedores pueden estar ubicados fuera del Espacio Económico Europeo (en particular, en Estados Unidos). En tales casos, las transferencias se realizan con garantías adecuadas: decisiones de adecuación de la Comisión Europea (como el Marco de Privacidad de Datos UE-EE. UU.) o cláusulas contractuales tipo.</p>
@@ -242,6 +249,18 @@
 
 <h3>5.6. Seguridad</h3>
 <p>AgenzIA aplica medidas técnicas y organizativas apropiadas al riesgo para garantizar la confidencialidad, integridad y disponibilidad de los datos.</p>
+
+<h3>5.7. Asistente del área de clientes</h3>
+<p>El área de clientes incluye un asistente automático, «Pregúntanos», que responde a las dudas de los usuarios sobre la cuenta de su empresa: en qué fase está su proyecto, qué necesitamos de ellos, sus facturas, los servicios que tienen contratados y su precio, y en qué punto está lo que han pedido al equipo. Su uso es voluntario.</p>
+<ul>
+<li><strong>Es una inteligencia artificial.</strong> Las respuestas las genera un modelo de lenguaje, no una persona, y así se indica en el propio asistente. Pueden contener errores: para cualquier cuestión importante, el usuario debe escribirnos en «Mensajes» del área de clientes.</li>
+<li><strong>Qué datos usa.</strong> La pregunta que escribe el usuario, los mensajes anteriores de esa misma conversación y los datos de la cuenta de su empresa que hacen falta para responder (nombre de la empresa, proyectos y fases, lo que se le pide, facturas, servicios contratados y su precio, y en qué punto está lo que ha pedido al equipo). Solo puede consultar los datos de la empresa del usuario que pregunta. No se envían al proveedor de IA el nombre ni el correo del usuario, datos de contacto, el contenido de sus mensajes con el equipo ni contraseñas. Pedimos no escribir contraseñas ni otros datos que no hagan falta para la consulta.</li>
+<li><strong>No guardamos las conversaciones.</strong> AgenzIA no almacena el texto de las preguntas ni de las respuestas: la conversación se borra al recargar la página o salir del área de clientes. Solo guardamos cuántos mensajes envía cada empresa al día, para aplicar el límite de uso, durante 12 meses.</li>
+<li><strong>Proveedor de IA.</strong> Usamos los modelos de OpenAI (OpenAI Ireland Ltd.), que trata los datos como encargado del tratamiento de AgenzIA, en Estados Unidos, con las garantías del apartado 5.4. Según sus condiciones de API, OpenAI puede conservar el contenido que recibe durante un máximo de 30 días para detectar abusos y no lo utiliza para entrenar sus modelos.</li>
+<li><strong>No decide nada ni cambia nada.</strong> El asistente solo informa: no modifica datos, no envía nada en nombre del usuario ni toma decisiones con efectos sobre él. Si el usuario necesita algo, le prepara un borrador de mensaje para el equipo, que el usuario revisa y decide si envía.</li>
+<li><strong>Atención por una persona.</strong> En cualquier momento se puede pedir atención humana escribiéndonos en «Mensajes» del área de clientes (el asistente puede preparar el mensaje) o escribiendo a <a href="mailto:agenzia.soporte@gmail.com">agenzia.soporte@gmail.com</a>.</li>
+<li><strong>Derechos.</strong> Se ejercen como se indica en el apartado 5.5. Como no guardamos el texto de las conversaciones, no podemos facilitar ni suprimir conversaciones pasadas.</li>
+</ul>
 
 <h2 id="meta">6. Datos obtenidos a través de Instagram y otras plataformas de Meta</h2>
 <p>AgenzIA desarrolla y opera una aplicación registrada en Meta que permite a negocios clientes atender, con un asistente de inteligencia artificial, los mensajes que reciben en su cuenta profesional de Instagram. Este apartado explica qué datos trata esa aplicación.</p>
@@ -275,7 +294,7 @@
 <p lang="en">AgenzIA operates a Meta app that lets businesses answer the Instagram messages they receive with an AI assistant. We only receive data from people who message, reply to a story or comment on the business account: their Instagram-scoped ID, username, message content (text, voice notes, photos, videos, shared posts) and timestamps. We use it only to reply on the business's behalf, book calls and alert the business. Voice notes are transcribed and photos described with OpenAI; the media files are not stored. Data is stored in the EU (Supabase, Frankfurt) for up to 12 months after the last message. We do not sell data or use it for advertising or model training. To request deletion, see <a href="/eliminacion-datos.html">/eliminacion-datos</a> or email <a href="mailto:agenzia.soporte@gmail.com">agenzia.soporte@gmail.com</a>.</p>
 </article>
 
-<p class="meta">Última actualización: 10/11/2026. AgenzIA podrá modificar estos textos para adaptarlos a novedades normativas o del servicio; la versión vigente será la publicada en esta página.</p>
+<p class="meta">Última actualización: 19/11/2026. AgenzIA podrá modificar estos textos para adaptarlos a novedades normativas o del servicio; la versión vigente será la publicada en esta página.</p>
 </div>
 </body>
 </html>
